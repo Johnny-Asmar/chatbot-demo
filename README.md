@@ -93,6 +93,10 @@ os.environ["OPENAI_API_KEY"] = "your-openai-api-key-here"
 cd src
 python app.py
 ```
+or go to root dir
+```bash
+python -m src.app
+```
 The Flask server will start on `http://localhost:5000`
 
 ### 2. Open the Frontend
