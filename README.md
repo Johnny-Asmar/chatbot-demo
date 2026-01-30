@@ -121,10 +121,6 @@ The Flask server will start on `http://localhost:5000`
 
 ### 2. Open the Frontend
 Open `interface/main.html` in your web browser, or serve it with a local server:
-```bash
-cd interface
-python -m http.server 3000
-```
 Then open `http://localhost:3000/main.html`
 
 ### 3. Import Documents
