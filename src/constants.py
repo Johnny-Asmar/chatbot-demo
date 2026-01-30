@@ -1,0 +1,6 @@
+N_CHARACTRERS = 1000
+RESSOURCES_DIR = "ressources"
+FILE_NAME = "sample"
+COLLECTION_NAME = "pdf_collection"
+N_RESULTS = 5
+TOKEN = 1
