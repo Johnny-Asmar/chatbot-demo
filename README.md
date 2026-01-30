@@ -19,15 +19,8 @@ This will start the Flask application.
 ## 📋 Prerequisites
 
 - Python 3.8+
-- Required packages (see Installation section below)
+- Required packages in requirements.txt
 - OpenAI API key
-
-## 🛠️ Installation
-
-### Install Dependencies
-```bash
-pip install flask flask-cors openai langchain chromadb beautifulsoup4 requests selenium webdriver-manager PyPDF2
-```
 
 ### Set OpenAI API Key
 Edit `src/ai/ai_model.py` and add your OpenAI API key:
@@ -42,7 +35,6 @@ os.environ["OPENAI_API_KEY"] = "your-api-key-here"
 - **Vector Database**: Efficient document storage and retrieval using ChromaDB
 - **Modern UI**: Beautiful, responsive web interface with real-time chat
 - **Document Processing**: Automatic PDF text extraction and indexing
-- **Conversation Memory**: Context-aware conversations with chat history
 
 ## 🏗️ Architecture
 
@@ -81,24 +73,8 @@ conda activate chatbot
 
 ### 3. Install Dependencies
 
-#### Option A: From your existing environment
-If you already have the packages installed in your miniconda environment:
 
-```bash
-# Export packages from your current environment
-conda activate your_env_name  # Replace with your actual environment name
-conda list --export > requirements.txt
-
-# Or if conda is not in PATH, use:
-~/miniconda3/bin/conda list --export > requirements.txt
-
-# Then install in new environment
-conda create -n chatbot python=3.9
-conda activate chatbot
-conda install --file requirements.txt
-```
-
-#### Option B: Manual installation
+#### Manual installation Or requirement.txt
 ```bash
 pip install flask flask-cors openai langchain chromadb beautifulsoup4 requests selenium webdriver-manager PyPDF2
 ```
@@ -120,8 +96,7 @@ python app.py
 The Flask server will start on `http://localhost:5000`
 
 ### 2. Open the Frontend
-Open `interface/main.html` in your web browser, or serve it with a local server:
-Then open `http://localhost:3000/main.html`
+Open `interface/main.html` in your web browser.
 
 ### 3. Import Documents
 Use the API endpoint to import your documents:
